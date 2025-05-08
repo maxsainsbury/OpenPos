@@ -1,12 +1,9 @@
 package view;
 
-import components.RoundButton;
-
 import javax.swing.*;
 
 public class MainFrame extends JFrame {
     private JPanel mainPanel;
-    private RoundButton roundButton;
 
     public MainFrame() {
         init();

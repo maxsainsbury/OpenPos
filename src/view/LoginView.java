@@ -3,9 +3,7 @@ package view;
 import components.RoundButton;
 
 import javax.swing.*;
-import javax.swing.border.BevelBorder;
 import javax.swing.border.Border;
-import javax.swing.border.EmptyBorder;
 import javax.swing.border.LineBorder;
 import java.awt.*;
 
