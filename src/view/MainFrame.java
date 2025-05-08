@@ -1,9 +1,12 @@
 package view;
 
+import components.RoundButton;
+
 import javax.swing.*;
 
 public class MainFrame extends JFrame {
-    private JPanel panel1;
+    private JPanel mainPanel;
+    private RoundButton roundButton;
 
     public MainFrame() {
         init();
@@ -14,8 +17,8 @@ public class MainFrame extends JFrame {
         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
         this.setUndecorated(true);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        panel1.setBounds(0,0,this.getWidth(),this.getHeight());
-        this.add(panel1);
-
+        this.add(mainPanel);
+        LoginView loginView = new LoginView();
+        mainPanel.add(loginView.getLoginPanel());
     }
 }
